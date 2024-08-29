@@ -1,0 +1,24 @@
+{
+  "name": "modelo-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dist": "tsup src",
+    "start:dev": "tsx --env-file=.env src/index.ts",
+    "start:watch": "tsx watch src/index.ts",
+    "start:dist": "npm run dist && --env-file=.env dist/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "tsup": "^8.2.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.1"
+  }
+}
